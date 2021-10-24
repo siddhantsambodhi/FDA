@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+</head>
+<body>
+<center><h1>profile</h1></center>
+
+<div>
+                        <div class="navbar-end">
+                            <a href="{{ url_for('profile') }}">
+                                Profile
+                            </a>
+                            <a href="{{ url_for('login') }}">
+                                Login
+                            </a>
+
+                        </div>
+</div>
+<h1>{{name}}</h1>
+</body>
+</html>

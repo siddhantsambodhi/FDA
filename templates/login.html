@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>face</title>
+
+<script>
+function myFunction() {
+  window.location = "/profile.html";
+}
+</script>
+</head>
+<body>
+<center><h1>Login</h1></center>
+
+<div >
+                        <div class="navbar-end">
+                            <a href="{{ url_for('profile') }}">
+                                Profile
+                            </a>
+                            <a href="{{ url_for('login') }}">
+                                Login
+                            </a>
+
+                        </div>
+</div>
+
+<form action="{{ url_for("login")}}" method="post">
+<!--<label for="firstname">First Name:</label>-->
+<!--<input type="text" id="firstname" name="fname" placeholder="firstname">-->
+<!--<label for="lastname">Last Name:</label>-->
+<!--<input type="text" id="lastname" name="lname" placeholder="lastname">-->
+<!--<a href=profile >-->
+    <button  type="submit" >Login</button>
+<!--</a>-->
+
+<h1>{{name}}</h1>
+
+<!--<h1 onchange="myFunction()">{{name}}</h1>-->
+
+
+</body>
+</html>
